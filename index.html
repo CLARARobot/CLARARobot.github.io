@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CLARA: Classifying and Disambiguating User
+    Commands for Reliable Interactive Robotic Agents</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">CLARA: Classifying and Disambiguating User
+                Commands for Reliable Interactive Robotic Agents</h1>
+            <div class="is-size-5 publication-authors">
+                <span class="author-block">Anonymous</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="column has-text-centered">
+          <div class="publication-links">
+               <!-- Arxiv PDF link -->
+            <span class="link-block">
+              <a href="https://arxiv.org/abs/2302.05324" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-file-pdf"></i>
+              </span>
+              <span>Paper</span>
+            </a>
+          </span>
+  </div>
+    </div>
+</section>
+<!-- Paper abstract -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+                In this paper, we focus on inferring whether the given user command is clear, ambiguous, or infeasible in the context of interactive robotic agents utilizing large language models (LLMs). To tackle this problem, we first present an uncertainty estimation method for LLMs to classify whether the command is certain (i.e., clear) or not (i.e., ambiguous or infeasible). Once the command is classified as uncertain, we further distinguish it between ambiguous or infeasible commands leveraging LLMs with situational aware context in a zero-shot manner. For ambiguous commands, we disambiguate the command by interacting with users via question generation with LLMs. We believe that proper recognition of the given commands could lead to a decrease in malfunction and undesired actions of the robot, enhancing the reliability of interactive robot agents. We present a dataset for robotic situational awareness, consisting pair of high-level commands, scene descriptions, and labels of command type (i.e., clear, ambiguous, or infeasible). We validate the proposed method on the collected dataset, pick-and-place tabletop simulation. Finally, we demonstrate the proposed approach in real-world human-robot interaction experiments, i.e., handover scenarios. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <!-- Paper video. -->
+        <h2 class="title is-3">Proposed method</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="publication-video">
+                <video poster="" id="video2" autoplay controls muted loop height="100%">
+                    <!-- Your video file here -->
+                    <source src="assets/method_video.mp4"
+                    type="video/mp4">
+                  </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Paper video. -->
+<section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <!-- Paper video. -->
+        <h2 class="title is-3">Demonstration</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            
+            <div class="publication-video">
+                <video poster="" id="video2" autoplay controls muted loop height="100%">
+                    <!-- Your video file here -->
+                    <source src="assets/demo.mp4"
+                    type="video/mp4">
+                  </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Clear, Ambiguous, and Feasible Cases</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="video1" autoplay controls muted loop height="80%">
+              <!-- Your video file here -->
+              <source src="assets/clear.mp4"
+              type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+                Clear Goal
+              </h2>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" autoplay controls muted loop height="80%">
+              <!-- Your video file here -->
+              <source src="assets/amb.mp4"
+              type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+                Ambiguous Goal
+              </h2>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="80%">\
+              <!-- Your video file here -->
+              <source src="assets/inf.mp4"
+              type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+                Infeasible Goal
+              </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   
+  <section class="hero is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Situational Awareness for Goal Classification in Robotic Tasks (SaGC)</h2>
+        <figure class="figure text-center">
+            <img src="assets/data2.jpeg" alt="MY ALT TEXT" style="width: 50%">
+        </figure>
+        <h2 class="subtitle has-text-centered">
+            We collected a dataset consisting of high-level goals paired with scene descriptions, annotated with three types of uncertainties,
+            i.e., clear, ambiguous, and infeasible. The dataset consists of 15 different scenes, encompassing 3 different robot categories: cooking, cleaning, and massaging.
+        </h2>
+        <figure class="figure text-center">
+            <img src="assets/UESA.jpg" alt="MY ALT TEXT" style="width: 70%">
+        </figure>
+        <h2 class="subtitle has-text-centered">
+            Examples of generated explanation and question from the proposed method. F, R, Q means Feasibility, Reasoning, and Question respectively.
+        </h2>
+    </div>
+    </div>
+    </section>
+
+  <section class="hero is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">PickNPlace Simulation</h2>
+        <figure class="figure text-center">
+            <img src="assets/picknplace.jpg" alt="MY ALT TEXT" style="width: 60%">
+        </figure>
+        <h2 class="subtitle has-text-centered">
+            Examples of generated explanation and question in the tabletop simulation.
+        </h2>
+    </div>
+    </div>
+    </section>
